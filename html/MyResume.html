@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鸿蒙阁</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vsPlayAudio</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.15.5/styles/androidstudio.min.css">
+    <script src="../js/vsPlayAudio.min.js"></script>
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/1.css">
+    <script src="//at.alicdn.com/t/font_1279669_q9wf4z9trwq.js"></script>
+    <style>
+        #nav {
+            text-align: center;
+        }
+        #nav ul li {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 15px 0 15px;
+            border-left: 1px dotted #2bbc8a;
+            line-height: 15px;
+        }
+        #nav ul li a {
+            font-size: .8rem;
+            color: #2bbc8a;
+        }
+        #nav ul .blog {
+            border-left: 0px dotted #2bbc8a;
+        }
+    </style>
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="TopAvBar ">
+        <div class="head-tp clearfix">
+            <a href="#" class="logo" alt="logo" style="float: left">
+                <span class="rs">CL</span><span class="card">Tall</span>
+            </a>
+            <nav style="float: right">
+                <ul class="clearfix">
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">项目</a></li>
+                    <li><a href="#">经验</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div class="usrCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img src="../img/touxiang.png" width="295.5" height="380.94" alt="头像">
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>H酱</h1>
+                    <p>活脱野兔下山</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>24</dd>
+                        <dt>性格</dt>
+                        <dd>沙雕蛮子</dd>
+                        <dt>所在城市</dt>
+                        <dd>广东省深圳市</dd>
+                        <dt>QQ</dt>
+                        <dd>46541389</dd>
+                        <dt>邮箱</dt>
+                        <dd>opocou@163.com</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-git"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dpstipiconqq"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ttww"></use>
+                    </svg>
+                </a><a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <p class="DowParent">
+            <a class="DowResume" href="../resume.pdf" target="_blank" download="">下载简历（PDF）</a>
+        </p>
+        <p class="chedan">
+            不甚酒力，体会不了酒的美味，但却能感受知已的妙处。<br>
+            没有朋友的人生是孤独的，不完整的，可是，因为生活的忙碌，渐渐少了联络，友谊就变的淡了；<br>
+            所以，抽点时间，联络朋友一起聊聊天，让情谊在笑声中升腾，当朋友遇到了难题的时候，一定要记得挺身而出，即便帮不了忙，安慰也是最大的支持！
+        </p>
+    </main>
+    <!-- 仍需调试的网易播放器 -->
+    <div class="music">
+        <span class="music_dome">
+            <div class="clear">
+                <div id="vsPlayAudio" style="margin: 12px auto 0;width: 75px;height: 75px;"></div>
+            </div>
+            <div class="button clearfix">
+                <div class="play">
+                    <img src="../img/play.png" alt="播放" onclick="player.play()" style="width: 25px;height: 20px">
+                </div>
+                <div class="pause">
+                    <img src="../img/pause.png" alt="暂停" onclick="player.pause()" style="width: 25px;height: 20px">
+                </div>
+                <div class="TFPiece">
+                    <img src="../img/TFPiece.png" alt="下一首" onclick="player.next()" style="width: 25px;height: 20px">
+                </div>
+                <div class="spend">
+                    <img src="../img/speed.png" alt="快进" onclick="player.go(10)" style="width: 25px;height: 20px">
+                </div>
+                <!--
+                <button onclick="player.play()">播放</button>
+                <button onclick="player.pause()">暂停</button>
+                <button onclick="player.next()">下一首</button>
+                <button onclick="player.go(10)">快进</button>
+                <button onclick="alert('当前播放的音乐名称：' + player.af.music.name)">player.af.music.name</button>
+                <button onclick="alert('当前播放的音乐歌手：' + player.af.music.author)">player.af.music.author</button>
+                <button onclick="alert('当前播放的音乐src：' + player.af.music.cover)">player.af.music.cover</button>
+                <button onclick="alert('当前播放的音乐id：' + player.af.music.song_id)">player.af.music.song_id</button>
+                -->
+            </div>
+        </span>
+    </div>
+    <section class="skills">
+        <h2>平时玩的游戏</h2>
+        <nav>
+            <ol class="clearfix">
+                <li>
+                    <h3>
+                        地下城与勇士
+                    </h3>
+                    <div class="progressBar1">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>绝地求生</h3>
+                    <div class="progressBar2">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>王者荣耀</h3>
+                    <div class="progressBar3">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>云梦四时歌</h3>
+                    <div class="progressBar4">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>和平精英</h3>
+                    <div class="progressBar5">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>英雄联盟</h3>
+                    <div class="progressBar6">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+    </section>
+    <section>
+        <h2>鸿蒙阁</h2>
+        <ol>
+            <li>枉生殿</li>
+            <li>宁神殿</li>
+            <li>百名殿</li>
+        </ol>
+    </section>
+    <div class="bg1">
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+    </div>
+    <script>
+        var player = new vsPlayAudio({
+            music: {
+                //必需项,音乐配置
+                type: 'cloud',
+                //必需项,网易云方式指定填'cloud'
+                source: '2682044074'
+                //必需项,网易云音乐歌单id
+                //登录网易云网页版,在网页地址中拿到
+                // ... playlist?id=2778782119
+            },
+            autoPlay: true,
+            random: true
+        });
+    </script>
+</body>
+</html>

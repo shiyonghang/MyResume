@@ -1,0 +1,317 @@
+body{
+    background: #efefef;
+    margin: 0;
+}
+body main{
+    margin-top: -345px;
+}
+a{
+    /*继承父级颜色*/
+    color: inherit;
+    /*取消下划线*/
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*固定写法，用于解决浮动样式带来的bug*/
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+ ul,ol{
+     /*取消默认列表样式*/
+     list-style: none;
+ }
+.TopAvBar {
+    padding: 20px 0;
+    /*脱离文档流*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.TopAvBar  > .head-tp {
+    padding: 0 150px 0 32px;
+}
+.TopAvBar nav {
+    padding-top: 7px;
+}
+.TopAvBar nav > ul{
+    /*取消默认样式*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.TopAvBar nav > ul > li{
+    float: left;
+    /*左边距*/
+    margin-left: 18px;
+    /*右边距*/
+    margin-right: 18px;
+}
+.TopAvBar nav > ul > li > a{
+    font-size: 13px;
+    color: #3D4451;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+    color: rgba(255, 255, 255, 0.7)
+}
+.TopAvBar nav > ul > li > a:hover{
+    border-bottom: 3px solid #E8676B;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+.TopAvBar .logo {
+    /*字体样式*/
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    padding-top: 3px;
+    padding-bottom: 4px;
+
+}
+.TopAvBar .logo .rs {
+    margin-right: 4px;
+    color: #E8676B;
+}
+.TopAvBar .logo .card {
+    color: #9A9DA2;
+}
+.banner{
+    /*border: 1px solid red;*/
+    background-image: url(../img/banner.jpg);
+    height: 515px;
+    background-position: center center;
+    /*掩盖图片自身大小-跟随父节点大小*/
+    background-size: cover;
+}
+.banner .mask{
+    height: 515px;
+    background-color: rgba(44, 51, 64, 0.8);
+}
+.usrCard{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+}
+.usrCard .welcome{
+    color: #FFFFFF;
+    background: #E8676B;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 18px;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 6px;
+}
+.usrCard .welcome .triangle{
+    display: block;
+    border: 12px solid transparent;
+    width: 0px;
+    border-left-color: #E8676B;
+    border-top-width: 0px;
+    position: absolute;
+    left: 10px;
+    top: 100%;
+}
+.usrCard .picture {
+    float: left;
+}
+.usrCard .text {
+    float: left;
+    margin-left: 60px;
+    width: 462px;
+}
+.usrCard .pictureAndText {
+    padding: 56px;
+}
+.usrCard .text > h1{
+    margin-top: 21px;
+    margin-bottom: 12px;
+}
+.usrCard hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #DEDEDE;
+    margin: 30px 0;
+}
+.usrCard dl dt,
+.usrCard dl dd{
+    float: left;
+    width: 50%;
+    padding-bottom: 20px;
+}
+.usrCard dl dt{
+    font-size: 14px;
+    width: 30%;
+    color: #333333;
+    font-weight: bold;
+}
+.usrCard dl dd{
+    width: 70%;
+    color: #9da0a7;
+}
+.usrCard .media{
+    background: #E6686A;
+    text-align: center;
+}
+.usrCard .media > a{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    padding: 15px 0;
+    border-radius: 50%;
+    margin: 16px;
+}
+.usrCard .media > a:hover{
+    background: #CF5D5F;
+}
+.usrCard .media svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    vertical-align: top;
+}
+body main .DowParent{
+    text-align: center;
+    padding: 35px;
+}
+body main .DowResume {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 21px 55px;
+    display: inline-block;
+    border: 1px solid #cbcdcf;
+    /*角弧度*/
+    border-radius: 3px;
+    /*字体加粗*/
+    font-weight: bold;
+    /*字体间隔*/
+    letter-spacing: 5px;
+    transition: box-shadow 0.4s;
+}
+body main .DowResume:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
+}
+body main .chedan{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.8;
+}
+body .music{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body .music .clear{
+    margin: 50px auto 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #fff;
+}
+body .music .button {
+    text-align: left;
+    margin: 30px 290px;
+}
+body .music .button img{
+    float: left;
+    padding: 0 30px;
+}
+body .skills{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 190px;
+}
+body .skills h3{
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+body .skills h2{
+    text-align: center;
+    color: #3D4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+body .skills > nav > ol{
+    background: white;
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+body .skills ol li{
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+body .skills ol li:nth-child(even){
+    float: right;
+}
+body .skills ol .progressBar1 ,
+body .skills ol .progressBar2 ,
+body .skills ol .progressBar3 ,
+body .skills ol .progressBar4 ,
+body .skills ol .progressBar5 ,
+body .skills ol .progressBar6{
+    height: 5px;
+    background: #FAE1E1;
+    margin: 4px 0 40px ;
+    border-radius: 2px;
+}
+body .skills ol .progressBar1 .progress{
+    height: 100%;
+    width: 70%;
+    background: #E8676B;
+    border-radius: 2px;
+}
+body .skills ol .progressBar2 .progress{
+    height: 100%;
+    width: 20%;
+    background: #E8676B;
+    border-radius: 2px;
+}
+body .skills ol .progressBar3 .progress{
+    height: 100%;
+    width: 40%;
+    background: #E8676B;
+    border-radius: 2px;
+}
+body .skills ol .progressBar4 .progress{
+    height: 100%;
+    width: 40%;
+    background: #E8676B;
+    border-radius: 2px;
+}
+body .skills ol .progressBar5 .progress{
+    height: 100%;
+    width: 80%;
+    background: #E8676B;
+    border-radius: 2px;
+}
+body .skills ol .progressBar6 .progress{
+    height: 100%;
+    width: 20%;
+    background: #E8676B;
+    border-radius: 2px;
+}

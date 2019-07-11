@@ -1,0 +1,62 @@
+body{
+    background: #444;
+}
+.taiji {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #000000 0%,#000000 50%,#ffffff 51%,#ffffff 100%);
+    position: relative;
+    margin: 100px auto 20px;
+}
+p {
+
+}
+
+@keyframes slidein {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.taiji:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #000000 0%,#000000 50%,#ffffff 50%,#ffffff 100%);
+    position: relative;
+    margin: 100px auto 20px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.taiji:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+    top: 50px;
+    left: 0;
+    border: 40px solid white;
+}
+.taiji:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: #FFF;
+    top: 50px;
+    right: 0;
+    border: 40px solid black;
+}
+p{
+    color: white;
+    text-align: center;
+}
