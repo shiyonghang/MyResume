@@ -66,9 +66,6 @@ a{
 .TopAvBar nav > ul > li > a:hover{
     border-bottom: 3px solid #E8676B;
 }
-h1,h2,h3,h4,h5,h6{
-    font-weight: normal;
-}
 .TopAvBar .logo {
     /*字体样式*/
     font-family: inherit;
@@ -134,37 +131,49 @@ h1,h2,h3,h4,h5,h6{
 }
 .usrCard .text {
     float: left;
-    margin-left: 60px;
-    width: 462px;
+    margin-left: 62px;
+    width: 470px;
 }
 .usrCard .pictureAndText {
-    padding: 56px;
+    padding: 50px;
 }
 .usrCard .text > h1{
     margin-top: 21px;
     margin-bottom: 12px;
+    font-weight: 700;
+}
+.usrCard .text > h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0;
 }
 .usrCard hr {
     height: 0;
     border: none;
     border-top: 1px solid #DEDEDE;
-    margin: 30px 0;
+    margin: 20px 0 15px;
+
 }
 .usrCard dl dt,
 .usrCard dl dd{
     float: left;
-    width: 50%;
-    padding-bottom: 20px;
+    padding: 10px 0;
 }
-.usrCard dl dt{
+.usrCard  dl dt{
+    float: left;
     font-size: 14px;
     width: 30%;
+    height: 15px;
     color: #333333;
     font-weight: bold;
 }
 .usrCard dl dd{
+    float: right;
     width: 70%;
+    height: 15px;
     color: #9da0a7;
+
 }
 .usrCard .media{
     background: #E6686A;
@@ -230,7 +239,9 @@ body .music .clear{
 }
 body .music .button {
     text-align: left;
-    margin: 30px 290px;
+    margin-top: 80px;
+    margin-left: 290px;
+    margin-right: 290px;
 }
 body .music .button img{
     float: left;
@@ -243,6 +254,7 @@ body .skills{
     margin-top: 190px;
 }
 body .skills h3{
+    font-weight: normal;
     font-size: 14px;
     line-height: 1.1;
     padding-right: 40px;
