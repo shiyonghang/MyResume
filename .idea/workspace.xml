@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/css/yinyang2.css" line="41" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="61842566-dc59-4168-805a-cf4e149aeaf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="61842566-dc59-4168-805a-cf4e149aeaf2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -40,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+            <state relative-caret-position="100">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -201,7 +202,7 @@
       <workItem from="1562378523203" duration="10417000" />
       <workItem from="1562572117010" duration="2293000" />
       <workItem from="1562657844164" duration="4432000" />
-      <workItem from="1562728893001" duration="25653000" />
+      <workItem from="1562728893001" duration="25742000" />
     </task>
     <task id="LOCAL-00001" summary="添加主页">
       <created>1562827459451</created>
@@ -214,7 +215,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95039000" />
+    <option name="totallyTimeSpent" value="95128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -414,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="100">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
