@@ -162,41 +162,41 @@
         </span>
     </div>
     <section class="skills">
-        <h2>平时玩的游戏</h2>
+        <h2>职业技能</h2>
         <nav>
             <ol class="clearfix">
                 <li>
-                    <h3>地下城与勇士</h3>
+                    <h3>H5</h3>
                     <div class="progressBar1">
                         <div class="progress"></div>
                     </div>
                 </li>
                 <li>
-                    <h3>绝地求生</h3>
+                    <h3>css3</h3>
                     <div class="progressBar2">
                         <div class="progress"></div>
                     </div>
                 </li>
                 <li>
-                    <h3>王者荣耀</h3>
+                    <h3>JS</h3>
                     <div class="progressBar3">
                         <div class="progress"></div>
                     </div>
                 </li>
                 <li>
-                    <h3>云梦四时歌</h3>
+                    <h3>jQuery</h3>
                     <div class="progressBar4">
                         <div class="progress"></div>
                     </div>
                 </li>
                 <li>
-                    <h3>和平精英</h3>
+                    <h3>java</h3>
                     <div class="progressBar5">
                         <div class="progress"></div>
                     </div>
                 </li>
                 <li>
-                    <h3>英雄联盟</h3>
+                    <h3>QA</h3>
                     <div class="progressBar6">
                         <div class="progress"></div>
                     </div>
@@ -204,20 +204,42 @@
             </ol>
         </nav>
     </section>
-    <section>
+    <section class="Video">
         <h2>鸿蒙阁</h2>
-        <ol>
-            <li>枉生殿</li>
-            <li>宁神殿</li>
-            <li>百名殿</li>
-        </ol>
+        <nav>
+            <ol class="clearfix">
+                <li id="VidoBar1">枉生殿</li>
+                <li id="VidoBar2">宁神殿</li>
+                <li id="VidoBar3">百名殿</li>
+            </ol>
+            <div id="VideoBarInner" class="bar status-1">
+                <div class="bar-inner"></div>
+            </div>
+        </nav>
+
+        <div class="bg" style="height: 570px">
+            <div class="bg1" style="top: 0;left: 0;">
+                <img src="../img/1.jpeg" width="600" height="570" alt="枉生殿">
+            </div>
+            <div class="bg2" style="top: 0;left: 620px">
+                <img src="../img/2.jpeg" width="290" height="277" alt="宁神殿">
+            </div>
+            <div class="bg2" style="top: 293px;left: 620px;">
+                <img src="../img/3.jpeg" width="290" height="277" alt="百名殿">
+            </div>
+        </div>
     </section>
-    <div class="bg1">
-        <div class="bg1"></div>
-        <div class="bg2"></div>
-        <div class="bg3"></div>
-    </div>
+
     <script>
+        VidoBar1.onclick = function () {
+            VideoBarInner.className = 'bar status-1'
+        }
+        VidoBar2.onclick = function () {
+            VideoBarInner.className = 'bar status-2'
+        }
+        VidoBar3.onclick = function () {
+            VideoBarInner.className = 'bar status-3'
+        }
         var player = new vsPlayAudio({
             music: {
                 //必需项,音乐配置

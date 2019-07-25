@@ -65,6 +65,7 @@ a{
 }
 .TopAvBar nav > ul > li > a:hover{
     border-bottom: 3px solid #E8676B;
+    transition: all 0.5s;
 }
 .TopAvBar .logo {
     /*字体样式*/
@@ -247,7 +248,9 @@ body .music .button img{
     float: left;
     padding: 0 30px;
 }
-body .skills{
+body .skills ,
+body .Video
+{
     max-width: 930px;
     margin-left: auto;
     margin-right: auto;
@@ -259,7 +262,9 @@ body .skills h3{
     line-height: 1.1;
     padding-right: 40px;
 }
-body .skills h2{
+body .skills h2 ,
+body .Video h2
+{
     text-align: center;
     color: #3D4451;
     font-size: 34px;
@@ -293,37 +298,93 @@ body .skills ol .progressBar6{
 }
 body .skills ol .progressBar1 .progress{
     height: 100%;
-    width: 70%;
+    width: 20%;
     background: #E8676B;
     border-radius: 2px;
 }
 body .skills ol .progressBar2 .progress{
     height: 100%;
-    width: 20%;
+    width: 35%;
     background: #E8676B;
     border-radius: 2px;
 }
 body .skills ol .progressBar3 .progress{
     height: 100%;
-    width: 40%;
+    width: 60%;
     background: #E8676B;
     border-radius: 2px;
 }
 body .skills ol .progressBar4 .progress{
     height: 100%;
-    width: 40%;
+    width: 20%;
     background: #E8676B;
     border-radius: 2px;
 }
 body .skills ol .progressBar5 .progress{
     height: 100%;
-    width: 80%;
+    width: 55%;
     background: #E8676B;
     border-radius: 2px;
 }
 body .skills ol .progressBar6 .progress{
     height: 100%;
-    width: 20%;
+    width: 60%;
     background: #E8676B;
     border-radius: 2px;
+}
+body .Video {
+    text-align: center;
+}
+body .Video > nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+body .Video > nav > ol {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+body .Video > nav > ol > li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+body .Video > nav > ol > li:first-child {
+    margin-left: 0px;
+}
+body .Video > nav .bar {
+    height: 5px;
+    background: white;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+body .Video > nav .bar-inner {
+    height: 100%;
+    background: #E8676B;
+    width: 38px;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+body .Video > nav .bar.status-1 .bar-inner {
+    margin-left: -3px;
+    width: 55px;
+}
+body .Video > nav .bar.status-2 .bar-inner {
+    margin-left: 55px;
+    width: 80px;
+}
+body .Video > nav .bar.status-3 .bar-inner {
+    margin-left: 140px;
+    width: 55px;
+}
+body .bg {
+    position: relative;
+    margin-top: 27px;
+}
+body .bg .bg1,
+body .bg .bg2{
+    position: absolute;
+    margin: 0 10px;
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
 }
