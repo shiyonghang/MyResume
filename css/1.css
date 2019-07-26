@@ -174,7 +174,7 @@ a{
     width: 70%;
     height: 15px;
     color: #9da0a7;
-
+    margin-top: 0.5px;
 }
 .usrCard .media{
     background: #E6686A;
@@ -334,6 +334,7 @@ body .skills ol .progressBar6 .progress{
 }
 body .Video {
     text-align: center;
+    margin-bottom: 80px;
 }
 body .Video > nav {
     display: inline-block;
@@ -372,11 +373,11 @@ body .Video > nav .bar.status-1 .bar-inner {
 }
 body .Video > nav .bar.status-2 .bar-inner {
     margin-left: 55px;
-    width: 80px;
+    width: 85px;
 }
 body .Video > nav .bar.status-3 .bar-inner {
     margin-left: 140px;
-    width: 55px;
+    width: 54px;
 }
 body .bg {
     position: relative;
