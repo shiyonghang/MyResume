@@ -132,6 +132,9 @@
     <!-- 仍需调试的网易播放器 -->
     <div class="music">
         <span class="music_dome clearfix">
+            <div class="bg-1">
+                <img src="this.png" onclick="player.af.music.cover" alt="歌曲背景" style="width: 100%; height: 100%">
+            </div>
             <div class="clear">
                 <div id="vsPlayAudio" style="margin: 12px auto 0;width: 75px;height: 75px;"></div>
             </div>
@@ -148,6 +151,7 @@
                 <div class="spend">
                     <img src="../img/speed.png" alt="快进" onclick="player.go(10)" style="width: 25px;height: 20px">
                 </div>
+
                 <!--
                 <button onclick="player.play()">播放</button>
                 <button onclick="player.pause()">暂停</button>
@@ -155,7 +159,7 @@
                 <button onclick="player.go(10)">快进</button>
                 <button onclick="alert('当前播放的音乐名称：' + player.af.music.name)">player.af.music.name</button>
                 <button onclick="alert('当前播放的音乐歌手：' + player.af.music.author)">player.af.music.author</button>
-                <button onclick="alert('当前播放的音乐src：' + player.af.music.cover)">player.af.music.cover</button>
+                <button onclick="alert(player.af.music.cover)">player.af.music.cover</button>
                 <button onclick="alert('当前播放的音乐id：' + player.af.music.song_id)">player.af.music.song_id</button>
                 -->
             </div>
@@ -255,6 +259,13 @@
             autoPlay: true,
             random: true
         });
+        function bg(){
+            var bg-1 = (player.af.music.cover);
+            alert(bg-1);
+        }
+        document.onload(){
+            bg();
+        }
     </script>
 </body>
 </html>
