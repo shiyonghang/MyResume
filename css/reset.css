@@ -20,3 +20,9 @@ body{font-size:100%;color: #000;}
 .right{float:right;}
 .left{float:left;}
 .icon {width: 1em; height: 1em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
+#nav {text-align: center;}
+#nav ul li {display: inline-block;vertical-align: middle;padding: 0 15px 0 15px;border-left: 1px dotted #2bbc8a;line-height: 15px;}
+#nav ul li a {font-size: .8rem;color: #2bbc8a;}
+#nav ul .blog { border-left: 0px dotted #2bbc8a;}
+.icon {= width: 1em; height: 1em;=vertical-align: -0.15em;=fill: currentColor;=overflow: hidden;
+}

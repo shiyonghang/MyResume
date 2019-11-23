@@ -11,37 +11,12 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.15.5/styles/androidstudio.min.css">
     <script src="../js/vsPlayAudio.min.js"></script>
     <script src="https://cdn.bootcss.com/highlight.js/9.15.6/highlight.min.js"></script>
+    <script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/1.css">
     <script src="//at.alicdn.com/t/font_1279669_q9wf4z9trwq.js"></script>
-    <style>
-        #nav {
-            text-align: center;
-        }
-        #nav ul li {
-            display: inline-block;
-            vertical-align: middle;
-            padding: 0 15px 0 15px;
-            border-left: 1px dotted #2bbc8a;
-            line-height: 15px;
-        }
-        #nav ul li a {
-            font-size: .8rem;
-            color: #2bbc8a;
-        }
-        #nav ul .blog {
-            border-left: 0px dotted #2bbc8a;
-        }
-    </style>
-    <style type="text/css">
-        .icon {
-            width: 1em; height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
-    </style>
+
 </head>
 <body>
     <div class="TopAvBar ">
@@ -139,29 +114,12 @@
                 <div id="vsPlayAudio" style="margin: 12px auto 0;width: 75px;height: 75px;"></div>
             </div>
             <div class="button">
-                <div class="play">
-                    <img src="../img/play.png" alt="播放" onclick="player.play()" style="width: 25px;height: 20px">
-                </div>
-                <div class="pause">
-                    <img src="../img/pause.png" alt="暂停" onclick="player.pause()" style="width: 25px;height: 20px">
+                <div class="playAndPause">
+                    <img src="../img/play.png" alt="暂停" style="width: 25px;height: 20px" id="play">
                 </div>
                 <div class="TFPiece">
                     <img src="../img/TFPiece.png" alt="下一首" onclick="player.next()" style="width: 25px;height: 20px">
                 </div>
-                <div class="spend">
-                    <img src="../img/speed.png" alt="快进" onclick="player.go(10)" style="width: 25px;height: 20px">
-                </div>
-
-                <!--
-                <button onclick="player.play()">播放</button>
-                <button onclick="player.pause()">暂停</button>
-                <button onclick="player.next()">下一首</button>
-                <button onclick="player.go(10)">快进</button>
-                <button onclick="alert('当前播放的音乐名称：' + player.af.music.name)">player.af.music.name</button>
-                <button onclick="alert('当前播放的音乐歌手：' + player.af.music.author)">player.af.music.author</button>
-                <button onclick="alert(player.af.music.cover)">player.af.music.cover</button>
-                <button onclick="alert('当前播放的音乐id：' + player.af.music.song_id)">player.af.music.song_id</button>
-                -->
             </div>
         </span>
     </div>
@@ -233,7 +191,9 @@
             </div>
         </div>
     </section>
-
+    <p style="display: inline-block;vertical-align: middle;text-align: left">
+        鸿蒙阁（域名 www.ppxlv.com）的网站备案号为：粤ICP备19089014号-1
+    </p>
     <script>
         VidoBar1.onclick = function () {
             VideoBarInner.className = 'bar status-1'
@@ -249,7 +209,7 @@
                 //必需项,音乐配置
                 type: 'cloud',
                 //必需项,网易云方式指定填'cloud'
-                source: '924680166'
+                source: '2643234673'
                 /*热歌*/
                 /*source: '2682044074'*/
                 //必需项,网易云音乐歌单id
@@ -259,13 +219,19 @@
             autoPlay: true,
             random: true
         });
-        function bg(){
-            var bg-1 = (player.af.music.cover);
-            alert(bg-1);
-        }
-        document.onload(){
-            bg();
-        }
+        var mark = 0; //生成状态码
+        $("#play").click(function(){
+            if(mark == 0){
+                player.play();
+                mark = 1;
+                $(this).attr({"src":"../img/pause.png"});
+            }else if (mark ==1){
+                player.pause();
+                mark = 0;
+                $(this).attr({"src":"../img/play.png"});
+            }
+        });
+
     </script>
 </body>
 </html>
