@@ -103,25 +103,7 @@
             所以，抽点时间，联络朋友一起聊聊天，让情谊在笑声中升腾，当朋友遇到了难题的时候，一定要记得挺身而出，即便帮不了忙，安慰也是最大的支持！
         </p>
     </main>
-    <!-- 仍需调试的网易播放器 -->
-    <div class="music" id="music">
-        <span class="music_dome clearfix">
-            <div class="bg-1">
-                <img src="this.png" onclick="player.af.music.cover" alt="歌曲背景" style="width: 100%; height: 100%">
-            </div>
-            <div class="clear">
-                <div id="vsPlayAudio" style="margin: 12px auto 0;width: 75px;height: 75px;"></div>
-            </div>
-            <div class="button">
-                <div class="playAndPause">
-                    <img src="../img/play.png" alt="暂停" style="width: 25px;height: 20px" id="play">
-                </div>
-                <div class="TFPiece">
-                    <img src="../img/TFPiece.png" alt="下一首" onclick="player.next()" style="width: 25px;height: 20px">
-                </div>
-            </div>
-        </span>
-    </div>
+
     <section class="skills" id="skills">
         <h2>职业技能</h2>
         <nav>
@@ -221,13 +203,14 @@
         var mark = 0; //生成状态码
         $("#play").click(function(){
             if(mark == 0){
-                player.play();
-                mark = 1;
-                $(this).attr({"src":"../img/pause.png"});
-            }else if (mark ==1){
                 player.pause();
-                mark = 0;
+                mark = 1;
                 $(this).attr({"src":"../img/play.png"});
+
+            }else if (mark ==1){
+                player.play();
+                mark = 0;
+                $(this).attr({"src":"../img/pause.png"});
             }
         });
 
