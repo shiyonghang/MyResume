@@ -36,6 +36,22 @@
                 </ul>
             </nav>
         </div>
+        <!-- 仍需调试的网易播放器 -->
+        <div class="music" id="music">
+        <span class="music_dome clearfix">
+            <div class="clear">
+                <div id="vsPlayAudio" style="margin: 12px auto 0;width: 75px;height: 75px;"></div>
+            </div>
+<!--            <div class="button">-->
+<!--                <div class="playAndPause">-->
+<!--                    <img src="../img/pause.png" alt="暂停" style="width: 25px;height: 20px" id="play">-->
+<!--                </div>-->
+<!--                <div class="TFPiece">-->
+<!--                    <img src="../img/TFPiece.png" alt="下一首" onclick="player.next()" style="width: 25px;height: 20px">-->
+<!--                </div>-->
+<!--            </div>-->
+        </span>
+        </div>
     </div>
     <div class="banner">
         <div class="mask"></div>
@@ -200,19 +216,19 @@
             autoPlay: true,
             random: true
         });
-        var mark = 0; //生成状态码
-        $("#play").click(function(){
-            if(mark == 0){
-                player.pause();
-                mark = 1;
-                $(this).attr({"src":"../img/play.png"});
-
-            }else if (mark ==1){
-                player.play();
-                mark = 0;
-                $(this).attr({"src":"../img/pause.png"});
-            }
-        });
+        // var mark = 0; //生成状态码
+        // $("#play").click(function(){
+        //     if(mark == 0){
+        //         player.pause();
+        //         mark = 0;
+        //         $(this).attr({"src":"../img/play.png"});
+        //     }else if (mark ==1){
+        //         player.play();
+        //         mark = 1;
+        //         $(this).attr({"src":"../img/pause.png"});
+        //
+        //     }
+        // });
 
     </script>
 </body>
