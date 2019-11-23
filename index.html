@@ -5,7 +5,7 @@
 <title>鸿蒙阁</title>
 </head>
 <body>
-<link rel="icon" href="./favicon.ico">
+<link rel="icon" href="favicon.ico">
 <link href="./css/style.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
 <div class="love">
@@ -197,6 +197,7 @@
 </svg>
   </div>
 </div>
+<a id="sp" href="./html/MyResume.html" style="color: white;float: right;text-decoration: blink; margin-top: 10%; margin-right: 2em;"></a>
 <script type="text/javascript">
   onload=function(){
     setInterval(go, 1000);
@@ -205,12 +206,13 @@
   function go(){
     x--;
     if(x>0){
-      document.getElementById("sp").innerHTML=x; //每次设置的x的值都不一样了。
+      document.getElementById("sp").innerHTML="剩余" + x + "秒,点击跳过"; //每次设置的x的值都不一样了。
     }else{
       location.href='./html/MyResume.html';
     }
   }
 </script>
+
 </body>
 </html>
 

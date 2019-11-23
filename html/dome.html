@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航页</title>
+    <link rel="stylesheet" href="../css/dome.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="mainXxx"></div>
+    </main>
+<script>
+    var key = {
+        '0' : {0 : 'q' , 1 : 'w' , 2 : 'e' , 3 : 'r' , 4 : 't' , 5 : 'y' , 6 : 'u' , 7 : 'i' , 8 : 'o' , 9 : 'p' ,length : 10},
+        '1' : {0 : 'a' , 1 : 's' , 2 : 'd' , 3 : 'f' , 4 : 'g' , 5 : 'h' , 6 : 'j' , 7 : 'k' , 8 : 'l', length : 9},
+        '2' : {0 : 'z' , 1 : 'x' , 2 : 'c' , 3 : 'v' , 4 : 'b' , 5 : 'n' , 6 : 'm' , length : 7},
+        'length': 3
+    }
+    var hash = {
+        'q' : 'qq.com', 'w' : 'weibo.com', 'e' : 'elema.com', 'r' : 'renren.com', 't' : 'tiantian.com', 'y' : 'youku.com', 'u' : 'uc.com',
+        'i' : 'ishangbi.com', 'o' : 'iqiyi.com', 'p' : 'ppxlv.com', 'a' : 'acfun.tv', 's' : 'shengdai.com', 'd' : 'douluodalu.com', 'f' : 'fengtian.com',
+        'g' : 'google.com', 'h' : 'huawei.com', 'j' : 'jmeter.com', 'k' : 'ktv.com', 'l' : 'lyg.com', 'z' : 'zhazhahui.com', 'x' : 'xiaweiyi.com',
+        'c' : 'cctv.com', 'v' : 'vip.com', 'b' : 'baidu.com', 'n' : 'next.com', 'm' : 'meituan.com'
+    }
+    index  = 0;
+    while (index < key['length']){
+        div1 = document.createElement('div');
+        mainXxx.appendChild(div1);
+        row = key[index];
+        index2 = 0;
+        while (index2 < row['length']) {
+            kbd = document.createElement('kbd');
+            kbd.textContent = row[index2];
+            button1 = document.createElement('button');
+            button1.textContent = '编辑';
+            button1.id = row[index2];
+            button1.onclick = function(data){
+                keys = data.target['id']; //得到用户点击事件
+                hashs = prompt('请输入需要变更的网址'); //吊起输入
+                hash[keys] = hashs; //将用户输入的新网址替换原网址;
+            }
+            kbd.appendChild(button1);
+            div1.appendChild(kbd);
+            index2 = index2 + 1;
+        }
+        index = index + 1;
+    }
+    document.onkeypress = function (data) {
+        //console.log(data)
+        keys = data['key']
+        website = hash[keys]
+        //location.href = 'http://' + website;
+        window.open('http://' + website,'_blank')
+    }
+
+</script>
+</body>
+</html>
